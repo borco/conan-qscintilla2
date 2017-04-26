@@ -6,7 +6,18 @@
 
 ### Windows
 
-* add **qmake** dir to your path so that *conan* finds it
+* add **qmake** dir (for example: `C:\Qt\5.9\mingw53_32\bin`) to your path so that *conan* finds it
+* set the default settings to **match it**
+
+```
+[settings_defaults]
+arch=x86_64
+os=Windows
+compiler=gcc
+compiler.version=5.3
+compiler.libcxx=libstdc++11
+build_type=Debug
+```
 
 ### Register to local registry
 
@@ -20,5 +31,3 @@ conan test_package
 ```
 conan remove QScintilla2*
 ```
-
-### Export to conan.io
