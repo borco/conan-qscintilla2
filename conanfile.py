@@ -5,8 +5,9 @@ import os
 class QscintillaConan(ConanFile):
     name = "QScintilla2"
     description = "QScintilla2 is a port to Qt4/5 of Neil Hodgson's Scintilla C++ editor control."
-    version = "0.1"
-    license = "GPLv3"
+    version = "2.10"
+    license = "GNU General Public License v3 (GPLv3)/Riverbank Commercial License"
+    author = "Riverbank Computing Limited (https://www.riverbankcomputing.com)"
     url = "https://github.com/borco/conan-qscintilla2"
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
