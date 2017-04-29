@@ -7,7 +7,7 @@ class QscintillaConan(ConanFile):
     description = "QScintilla2 is a port to Qt4/5 of Neil Hodgson's Scintilla C++ editor control."
     version = "0.1"
     license = "GPLv3"
-    url = "https://www.riverbankcomputing.com/software/qscintilla/download"
+    url = "https://github.com/borco/conan-qscintilla2"
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
     default_options = "shared=False"
